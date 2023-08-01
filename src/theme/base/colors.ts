@@ -215,16 +215,16 @@ const colors = {
     900: '#78350f',
   },
   orange: {
-    50: '#fff7ed',
-    100: '#ffedd5',
-    200: '#fed7aa',
-    300: '#fdba74',
-    400: '#fb923c',
-    500: '#f97316',
-    600: '#ea580c',
-    700: '#c2410c',
-    800: '#9a3412',
-    900: '#7c2d12',
+    50: '#ffebe1',
+    100: '#ffd0ba',
+    200: '#ffb492',
+    300: '#ff996a',
+    400: '#ff7e44',
+    500: '#f97031',
+    600: '#f16321',
+    700: '#e45817',
+    800: '#c8521b',
+    900: '#ad4c1f'
   },
   red: {
     50: '#fef2f2',
@@ -341,7 +341,7 @@ colors.success = colors.green;
 colors.warning = colors.orange;
 colors.muted = colors.trueGray;
 colors.primary = colors.cyan;
-colors.secondary = colors.pink;
+colors.secondary = colors.orange;
 colors.tertiary = colors.emerald;
 colors.info = colors.lightBlue;
 colors.light = colors.warmGray;
