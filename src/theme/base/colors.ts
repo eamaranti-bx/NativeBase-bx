@@ -22,6 +22,30 @@ const colors = {
   lightText: '#FFFFFF',
   darkText: '#000000',
   // Primary colors
+  blueExpress: {
+    50: '#3e7bff',
+    100: '#1660ff',
+    200: '#004bee',
+    300: '#003fc6',
+    400: '#0032a0',
+    500: '#042c83',
+    600: '#072668',
+    700: '#081f50',
+    800: '#081738',
+    900: '#060f22'
+    },
+    redAlert: {
+      50: '#ffa8a8',
+      100: '#ff8787',
+      200: '#ff6666',
+      300: '#fd4747',
+      400: '#fd2626',
+      500: '#f71818',
+      600: '#ec0f0f',
+      700: '#d41414',
+      800: '#bd1717',
+      900: '#a71a1a'
+      },
   rose: {
     50: '#fff1f2',
     100: '#ffe4e6',
@@ -107,16 +131,16 @@ const colors = {
     900: '#1e3a8a',
   },
   lightBlue: {
-    50: '#f0f9ff',
-    100: '#e0f2fe',
-    200: '#bae6fd',
-    300: '#7dd3fc',
-    400: '#38bdf8',
-    500: '#0ea5e9',
-    600: '#0284c7',
-    700: '#0369a1',
-    800: '#075985',
-    900: '#0c4a6e',
+    50: '#c8edff',
+    100: '#a0dfff',
+    200: '#78d2ff',
+    300: '#51c5ff',
+    400: '#2bb9ff',
+    500: '#18adf8',
+    600: '#0fa1ea',
+    700: '#148fcd',
+    800: '#187eb1',
+    900: '#1b6e97'
   },
   darkBlue: {
     50: '#dbf4ff',
@@ -167,16 +191,16 @@ const colors = {
     900: '#064e3b',
   },
   green: {
-    50: '#f0fdf4',
-    100: '#dcfce7',
-    200: '#bbf7d0',
-    300: '#86efac',
-    400: '#4ade80',
-    500: '#22c55e',
-    600: '#16a34a',
-    700: '#15803d',
-    800: '#166534',
-    900: '#14532d',
+    50: '#6beb89',
+    100: '#53e274',
+    200: '#3cd760',
+    300: '#2fc352',
+    400: '#28a745',
+    500: '#2a9442',
+    600: '#2a803e',
+    700: '#296e39',
+    800: '#275c33',
+    900: '#244b2d'
   },
   lime: {
     50: '#f7fee7',
@@ -191,16 +215,16 @@ const colors = {
     900: '#365314',
   },
   yellow: {
-    50: '#fefce8',
-    100: '#fef9c3',
-    200: '#fef08a',
-    300: '#fde047',
-    400: '#facc15',
-    500: '#eab308',
-    600: '#ca8a04',
-    700: '#a16207',
-    800: '#854d0e',
-    900: '#713f12',
+    50: '#fffffe',
+    100: '#fffaf3',
+    200: '#fff5e8',
+    300: '#fef0dd',
+    400: '#feecd2',
+    500: '#fee9cc',
+    600: '#fde6c6',
+    700: '#fce3c0',
+    800: '#fbe0ba',
+    900: '#faddb5'
   },
   amber: {
     50: '#fffbeb',
@@ -322,6 +346,18 @@ const colors = {
     800: '#262626',
     900: '#171717',
   },
+  LblueExpress: {
+    50: '#b1e6fc',
+    100: '#94dbf8',
+    200: '#78cff2',
+    300: '#5fc3ea',
+    400: '#41b6e6',
+    500: '#36afde',
+    600: '#2ba5d5',
+    700: '#2d96c0',
+    800: '#2f88ab',
+    900: '#2f7996'
+    },
   // Derived colors
   danger: {} as IColorHues,
   error: {} as IColorHues,
@@ -335,16 +371,16 @@ const colors = {
   tertiary: {} as IColorHues,
 };
 
-colors.danger = colors.rose;
-colors.error = colors.red;
-colors.success = colors.green;
-colors.warning = colors.orange;
-colors.muted = colors.trueGray;
-colors.primary = colors.cyan;
-colors.secondary = colors.orange;
-colors.tertiary = colors.emerald;
-colors.info = colors.lightBlue;
-colors.light = colors.warmGray;
+colors.danger = colors.redAlert; //ok
+colors.error = colors.redAlert; //ok
+colors.success = colors.green; //ok
+colors.warning = colors.yellow; //ok
+colors.muted = colors.trueGray; 
+colors.primary = colors.blueExpress; //ok
+colors.secondary = colors.orange; //ok
+colors.tertiary = colors.lightBlue; //ok
+colors.info = colors.LblueExpress; //ok
+colors.light = colors.warmGray; //ok 
 
 export default colors;
 // export type IColors = Leaves<ITheme['colors']>;
